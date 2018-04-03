@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0f8e9889bbbd4b3bad7f8aa178a76b6b" Name="Diagram1">
+        <EntityTypeShape EntityType="BookshopModel.aspnet_Applications" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookshopModel.aspnet_Membership" Width="1.5" PointX="6" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookshopModel.aspnet_Paths" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookshopModel.aspnet_PersonalizationAllUsers" Width="1.5" PointX="5.25" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookshopModel.aspnet_PersonalizationPerUser" Width="1.5" PointX="4.125" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookshopModel.aspnet_Profile" Width="1.5" PointX="10.5" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookshopModel.aspnet_Roles" Width="1.5" PointX="3" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookshopModel.aspnet_SchemaVersions" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookshopModel.aspnet_Users" Width="1.5" PointX="8.25" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookshopModel.aspnet_WebEvent_Events" Width="1.5" PointX="8.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookshopModel.Book" Width="1.5" PointX="10" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookshopModel.Category" Width="1.5" PointX="7.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookshopModel.IssueTran" Width="1.5" PointX="10.5" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookshopModel.IssueTransBookList" Width="1.5" PointX="12.875" PointY="1.5" IsExpanded="true" />
+        <AssociationConnector Association="BookshopModel.FK__aspnet_Me__Appli__38996AB5" ManuallyRouted="false" />
+        <AssociationConnector Association="BookshopModel.FK__aspnet_Pa__Appli__6A30C649" ManuallyRouted="false" />
+        <AssociationConnector Association="BookshopModel.FK__aspnet_Ro__Appli__571DF1D5" ManuallyRouted="false" />
+        <AssociationConnector Association="BookshopModel.FK__aspnet_Us__Appli__286302EC" ManuallyRouted="false" />
+        <AssociationConnector Association="BookshopModel.FK__aspnet_Me__UserI__398D8EEE" ManuallyRouted="false" />
+        <AssociationConnector Association="BookshopModel.FK__aspnet_Pe__PathI__6FE99F9F" ManuallyRouted="false" />
+        <AssociationConnector Association="BookshopModel.FK__aspnet_Pe__PathI__73BA3083" ManuallyRouted="false" />
+        <AssociationConnector Association="BookshopModel.FK__aspnet_Pe__UserI__74AE54BC" ManuallyRouted="false" />
+        <AssociationConnector Association="BookshopModel.FK__aspnet_Pr__UserI__4D94879B" ManuallyRouted="false" />
+        <AssociationConnector Association="BookshopModel.FK__IssueTran__UserI__19DFD96B" ManuallyRouted="false" />
+        <AssociationConnector Association="BookshopModel.FK__Book__CategoryID__1CF15040" ManuallyRouted="false" />
+        <AssociationConnector Association="BookshopModel.FK__IssueTran__BookI__18EBB532" ManuallyRouted="false" />
+        <AssociationConnector Association="BookshopModel.FK__IssueTran__BookI__1AD3FDA4" ManuallyRouted="false" />
+        <AssociationConnector Association="BookshopModel.aspnet_UsersInRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

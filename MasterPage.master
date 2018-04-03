@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <!-- Bootstrap Code -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="http://getbootstrap.com/docs/3.3/examples/starter-template/starter-template.css" rel="stylesheet">
+
+    <title>Team 13 Bookshop</title>
+
+    <asp:ContentPlaceHolder ID="headPlaceHolder" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+
+<body>
+    <form id="form1" runat="server">
+        <!-- Top Bar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                
+                
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/Team13Bookshop/Default.aspx">
+                        <img src="/Team13BookShop/Images/RedBook.png" height="30" style="padding-bottom: 5px;"></img>
+                    </a>
+                    <a class="navbar-brand" href="/Team13Bookshop/Default.aspx">Team 13 Bookshop</a>
+                </div>
+               
+                
+                
+                 <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <%if (!System.Web.HttpContext.Current.User.IsInRole("owner"))
+                            { %>
+                        <li><a href="/Team13BookShop/CartView.aspx">Cart</a></li>
+                        <%} %>
+
+                        <%if (System.Web.HttpContext.Current.User.IsInRole("owner"))
+                            { %>
+                        <li><a href="/Team13BookShop/Owner/ManageInv.aspx">Manage Inventory</a></li>
+                        <%} %>
+
+
+                        <li>
+                            <asp:LoginStatus ID="LoginStatus1" runat="server" />
+                        </li>
+
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+            <!--/.container-fluid -->
+        </nav>
+
+
+        <!-- Actual Content -->
+        <div class="container">
+            <div class="starter-template">
+                <asp:ContentPlaceHolder ID="bodyPlaceHolder" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+
+    <!-- Bootstrap Code -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
